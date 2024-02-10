@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>News Catcher</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js " defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="relode()" class="company-logo">
+                <img src="/files/logo.png" alt="company logo">
+            </a>
+            <div class="nav-link ">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finanace</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="card-container container flex" id="card-container">
+
+    </main>
+    
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h2 id="news-title">This is the Titel</h2>
+                <h6 class="news-source" id="news-source">end gadget 2/10/2024</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam,
+                    eos soluta
+                    dolores optio consectetur similique pariatur odio alias necessitatibus cum voluptatibus, porro amet,
+                    earum nemo modi cupiditate. Consequuntur, modi accusamus.
+                </p>
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>
